@@ -20,5 +20,10 @@
   "prisma": {
     "seed": "yarn rw exec seed"
   },
-  "packageManager": "yarn@3.4.1"
+  "packageManager": "yarn@3.4.1",
+  "dependencies": {
+    "@blueprintjs/core": "^4.17.7",
+    "google-map-react": "^2.2.0",
+    "styled-components": "^5.3.9"
+  }
 }
