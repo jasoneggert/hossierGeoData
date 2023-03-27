@@ -23,6 +23,7 @@
   "packageManager": "yarn@3.4.1",
   "dependencies": {
     "@blueprintjs/core": "^4.17.7",
+    "@react-google-maps/api": "^2.18.1",
     "google-map-react": "^2.2.0",
     "styled-components": "^5.3.9"
   }

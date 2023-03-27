@@ -1,3 +1,5 @@
+import { Link, routes } from '@redwoodjs/router'
+
 type MainLayoutProps = {
   children?: React.ReactNode
 }
@@ -10,7 +12,12 @@ const MainLayout = ({ children }: MainLayoutProps) => {
       <NavBar>NavBar</NavBar>
       <Main>{children}</Main>
       <SideBar>
-        <NavItem>One</NavItem>
+        <NavItem>
+          <Link to={routes.home()}>Heatmap1</Link>
+        </NavItem>
+        <NavItem>
+          <Link to={routes.heatmap()}>Heatmap2</Link>
+        </NavItem>
         <NavItem>Two</NavItem>
         <NavItem>Three</NavItem>
       </SideBar>

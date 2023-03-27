@@ -14,6 +14,7 @@ import MainLayout from './layouts/MainLayout/MainLayout'
 const Routes = () => {
   return (
     <Router>
+      <Route path="/marker-map" page={MarkerMapPage} name="markerMap" />
       <Set wrap={MainLayout}>
         <Route path="/" page={HomePage} name="home" />
         <Route path="/heatmap" page={HeatmapPage} name="heatmap" />
