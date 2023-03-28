@@ -1,10 +1,10 @@
+import styled from 'styled-components'
+
 import { Link, routes } from '@redwoodjs/router'
 
 type MainLayoutProps = {
   children?: React.ReactNode
 }
-
-import styled from 'styled-components'
 
 const MainLayout = ({ children }: MainLayoutProps) => {
   return (
@@ -14,9 +14,6 @@ const MainLayout = ({ children }: MainLayoutProps) => {
       <SideBar>
         <NavItem>
           <Link to={routes.home()}>Heatmap1</Link>
-        </NavItem>
-        <NavItem>
-          <Link to={routes.heatmap()}>Heatmap2</Link>
         </NavItem>
         <NavItem>Two</NavItem>
         <NavItem>Three</NavItem>

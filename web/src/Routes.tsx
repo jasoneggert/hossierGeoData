@@ -17,7 +17,6 @@ const Routes = () => {
       <Route path="/marker-map" page={MarkerMapPage} name="markerMap" />
       <Set wrap={MainLayout}>
         <Route path="/" page={HomePage} name="home" />
-        <Route path="/heatmap" page={HeatmapPage} name="heatmap" />
       </Set>
       <Route notfound page={NotFoundPage} />
     </Router>

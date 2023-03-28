@@ -46,13 +46,8 @@ const covertZiptoLatLng = () => {
       const lat = index !== -1 ? arr2[index].lat : {}
       const lng = index !== -1 ? arr2[index].lng : {}
       const medicaidClaims = index !== -1 ? arr1[index].claims : {}
-      const emptyCheck = (obj) => {
-        return Object.keys(obj).length === 0
-      }
-      console.log(emptyCheck(lat))
       return {
-        lat,
-        lng,
+        location: new window.google.maps.LatLng(lat, lng),
         weight: medicaidClaims,
       }
     })

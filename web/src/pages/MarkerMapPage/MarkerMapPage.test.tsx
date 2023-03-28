@@ -1,14 +1,14 @@
 import { render } from '@redwoodjs/testing/web'
 
-import HeatmapPage from './HeatmapPage'
+import MarkerMapPage from './MarkerMapPage'
 
 //   Improve this test with help from the Redwood Testing Doc:
 //   https://redwoodjs.com/docs/testing#testing-pages-layouts
 
-describe('HeatmapPage', () => {
+describe('MarkerMapPage', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<HeatmapPage />)
+      render(<MarkerMapPage />)
     }).not.toThrow()
   })
 })
